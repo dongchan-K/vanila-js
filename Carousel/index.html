@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"
@@ -13,32 +18,32 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <div id="container">
-      <div class="slide_wrap">
-        <div class="slide_box">
-          <div class="slide_list clearfix">
-            <div class="slide_content slide01">
-              <p>1</p>
-            </div>
-            <div class="slide_content slide02">
-              <p>2</p>
-            </div>
-            <div class="slide_content slide03">
-              <p>3</p>
-            </div>
-            <div class="slide_content slide04">
-              <p>4</p>
-            </div>
-            <div class="slide_content slide05">
-              <p>5</p>
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <div class="carousel_wrapper">
+        <ul class="carousel">
+          <li class="carousel_item">
+            <img src="./images/1.png" alt="#" />
+          </li>
+          <li class="carousel_item">
+            <img src="./images/2.png" alt="#" />
+          </li>
+          <li class="carousel_item">
+            <img src="./images/3.png" alt="#" />
+          </li>
+          <li class="carousel_item">
+            <img src="./images/4.png" alt="#" />
+          </li>
+          <li class="carousel_item">
+            <img src="./images/5.jpg" alt="#" />
+          </li>
+        </ul>
 
-        <div class="slide_btn_box">
-          <button type="button" class="slide_btn_prev">Prev</button>
-          <button type="button" class="slide_btn_next">Next</button>
-        </div>
+        <button type="button" class="controll_btn prev">
+          <i class="fas fa-angle-double-left"></i>
+        </button>
+        <button type="button" class="controll_btn next">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
       </div>
     </div>
   </body>
