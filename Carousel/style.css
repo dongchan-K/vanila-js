@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.slide_wrap {
+  position: relative;
+  width: 400px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.slide_box {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.slide_content {
+  display: table;
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+
+.slide_content > p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: #555;
+}
+
+.slide_content .slide01 {
+  background-color: yellow;
+}
+
+.slide_btn_box > button {
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  color: #999;
+  background: none;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.slide_btn_box > .slide_btn_prev {
+  left: -100px;
+}
+
+.slide_btn_box > .slide_btn_next {
+  right: -100px;
+}
