@@ -42,6 +42,10 @@ body {
 .item {
   height: 150px;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
   background: linear-gradient(to bottom, #3de0e0, #2eb3b3);
   border-radius: 10px;
 }

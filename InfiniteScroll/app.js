@@ -28,11 +28,12 @@ const callback = (entries, observer) => {
     for (let i = 0; i < 5; i++) {
       const $li = document.createElement('li');
       $li.classList.add('item');
+      $li.textContent = count + 1;
       $fragment.appendChild($li);
+      count++;
     }
     $target.appendChild($fragment);
 
-    count = document.querySelectorAll('.items > li').length;
     target = $target.lastElementChild;
     observer.disconnect();
     observer.observe(target);
